@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+
+#grid {
+
+    background-color: red;
+    display: grid;
+    padding: 20px;
+    row-gap: 10px;
+    column-gap: 20px;
+    grid-template-columns: 200px 200px auto;
+
+}
+
+#grid > div {
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0.1%;
+
+
+}
+
+
+/* media query con flexbox */
+        @media (max-width: 1360px) {
+            #container {
+                width: auto;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: green;
+            }
+
+             #container > div {
+
+            width: 200px;
+            height: 100%;
+            background-color: blue;
+            margin: 20px;
+            padding: 20px;
+        
+            }
+        }
+
+        @media (max-width: 720px) {
+            #container > div {
+
+                width: 100px;
+                background-color: black;
+                color: white;
+
+
+            }
+        }
+
+    </style>
+
+
+<body>
+    
+
+    <h4 style="align-items: center;">ESTO ES UN FLEXBOX!</h4>
+
+    <div id="container">
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+        <div >texto</div>
+
+    </div>
+
+    <h4 style="align-items: center;">ESTO ES UN GRID!</h4>
+<div id="grid">
+ 
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+
+</div>
+
+
+<!--ESTO ES UN DATALIST MUY ÚTIL-->
+
+<form action="">
+    <input name="countries" list="countries" placeholder="ciudad">
+    <datalist id="countries">
+        <option value="Venezuela">Venezuela</option>
+        <option value="Nueva Zelanda">Nueva Zelanda</option>
+    
+    
+    </datalist>
+    
+    
+    
+    </form>
+
+
+
+
+</body>
+</html>
